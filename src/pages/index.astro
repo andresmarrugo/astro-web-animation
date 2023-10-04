@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Sceene from "../components/sceene";
+import Navbar from '../components/Navbar.astro'
+---
+
+<Layout title="Andrés Marrugo">
+	<main>
+		<Sceene client:visible>
+			<Navbar/>
+		</Sceene>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+</style>
